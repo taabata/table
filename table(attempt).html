@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head></head>
+<style>
+    table{
+        width: 750px;
+        height: 200px;
+    }
+    .cell{
+        position: fixed;
+        display: flex;
+    }
+    p{
+        position: relative;
+        padding-right: 100px;
+        padding-left: 100px; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    }
+</style>
+<body>
+    <script>
+        window.onload = function(){
+            for(i=1;i<=4;i++){
+                if(i%2!=0){
+                    document.getElementById("r"+i).style.background = "rgb(187, 187, 187,0.3)";
+                }
+                else{
+                    document.getElementById("r"+i).style.background = "rgb(187, 187, 187,0.1)";
+                }
+                if(i==3){
+                    document.getElementById("r"+i).style.border = "2px solid green";
+                    document.getElementById("r"+i).style.background = "rgba(0, 128, 0, 0.1)";
+                }
+            }
+
+
+        }
+        
+    </script>
+    <table>
+        <tr>
+            <td colspan="6" id="r1" class="cell">
+                <p>8:43</p>
+                <p>7:13</p>
+                <p>4:17</p>
+                <p>12:35</p>
+                <p>22/04/21</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" id="r2" class="cell">
+                <p>8:44</p>
+                <p>7:14</p>
+                <p>4:17</p>
+                <p>12:35</p>
+                <p>22/04/22</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" id="r3" class="cell">
+                <p>8:45</p>
+                <p>7:15</p>
+                <p>4:17</p>
+                <p>12:35</p>
+                <p>22/04/23</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" id="r4" class="cell">
+                <p>8:46</p>
+                <p>7:16</p>
+                <p>4:17</p>
+                <p>12:35</p>
+                <p>22/04/24</p>
+            </td>
+        </tr>
+    </table>
+</body>
